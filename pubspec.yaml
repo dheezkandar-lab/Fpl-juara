@@ -1,0 +1,41 @@
+name: fpljuara
+description: FPLjuara — asisten FPL dengan tema hijau & logo raja, dilengkapi caching, splash screen.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.2
+  intl: ^0.19.0
+  shared_preferences: ^2.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo.png
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo.png"
+  adaptive_icon_foreground: "assets/logo.png"
+  adaptive_icon_background: "#00ff87"
+
+flutter_native_splash:
+  color: "#00ff87"
+  image: assets/logo.png
+  android: true
+  ios: true
+  android_12:
+    image: assets/logo.png
+    icon_background_color: "#00ff87"
